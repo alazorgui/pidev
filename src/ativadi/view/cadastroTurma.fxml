@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="542.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ativadi.controler.CreateCoachController">
+    <stylesheets>
+        <URL value="@cadastroturma.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="235.0" layoutY="14.0" text="new coach">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="296.0" text="Identifiant" />
+      <Label layoutX="19.0" layoutY="166.0" text="email" />
+      <Label layoutX="17.0" layoutY="222.0" text="coachPassword" />
+      <Label layoutX="37.0" layoutY="337.0" text="description" />
+      <Label layoutX="22.0" layoutY="79.0" text="coachname" />
+      <TextField fx:id="Identifiant" layoutX="324.0" layoutY="291.0" prefHeight="31.0" prefWidth="210.0" />
+      <TextArea fx:id="description" layoutX="23.0" layoutY="371.0" prefHeight="70.0" prefWidth="555.0" />
+      <Button fx:id="btCriarTurma" layoutX="34.0" layoutY="470.0" mnemonicParsing="false" onAction="#criarTurma" text="create" />
+      <Button fx:id="btVoltar" layoutX="491.0" layoutY="485.0" mnemonicParsing="false" onAction="#voltarTela" prefHeight="25.0" prefWidth="78.0" text="annuler" />
+      <TextField fx:id="coachName" layoutX="324.0" layoutY="74.0" />
+      <TextField fx:id="email" layoutX="324.0" layoutY="150.0" prefHeight="31.0" prefWidth="210.0" />
+      <PasswordField fx:id="coachPassword" layoutX="324.0" layoutY="207.0" prefHeight="31.0" prefWidth="210.0" />
+      <Text layoutX="272.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" />
+      <Button fx:id="home" layoutX="244.0" layoutY="470.0" mnemonicParsing="false" onAction="#gohome" text="home" />
+   </children>
+</AnchorPane>
